@@ -83,4 +83,3 @@ These are the 15 most important patterns to learn and master while solving probl
 
 # Let's see, how many I can solve in this year !!!
 # Solving patterns from Neetcode.io though. 
-# Love the roadmap in this site.
