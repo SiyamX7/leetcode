@@ -1,24 +1,27 @@
 #include <bits/stdc++.h>
+#include <unordered_map>
 #include <vector>
 using namespace std;          
 
 vector<int> dailyTemperatures(vector<int>& v) {
-	vector<int> res(v.size());
     stack<int> st;
+    unordered_map<int,int> mp;
+    vector<int> res(v.size());
 
-    st.push(v[0]);
-    int count = 0;
-    for(int i = 1; i < v.size(); i++){
-    	if(st.empty()) count = 0;
-
-    	if(v[i] <= st.top()){
-    		st.push(v[i]);
-    	} else {
-    		st.pop();
-    		res[i] = ++count;
-    	}
+    for(int i = 0; i < v.size(); i++){
+        if(i == v.size() - 1){
+            mp[i] = 0;
+        } else {
+            int x = v[i];
+            int y = v[i+1];
+            if(x < y){
+                st.push(x);
+            } else {
+                st.pop();
+                mp[i] = 
+            }
+        }
     }
-    return res;
 }         
 
 int main() {
