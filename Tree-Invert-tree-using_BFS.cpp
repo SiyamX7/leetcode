@@ -27,7 +27,7 @@ public:
 	}
 
 	void bfs(Node *root){
-		if(root==nullptr){
+		if(root == nullptr){
 			cout << "Root is empty" << endl;
 			return;
 		}
